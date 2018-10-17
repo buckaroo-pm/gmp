@@ -75,6 +75,7 @@ genrule(
     'cp -r $SRCDIR/. $TMP', 
     'cd $TMP', 
     'chmod +x ./.bootstrap', 
+    'chmod +x ./mpn/m4-ccas', 
     './.bootstrap', 
     './configure --prefix=$OUT', 
     'make -j4', 
